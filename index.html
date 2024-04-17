@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="icon" href="./icon.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./estilo.css">
+    <title>Para Janne</title>
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>De Samuel para, Janne</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">¿Qué es este sitio?</a></li>                           
+                        </ul>
+                    </nav>
+
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Se que puede ser un poco raro esto pero, con el tiempo verás porque lo hice...</p>
+                <h2><span></span><3
+                    </h2>
+                <p class="descripcion">Será que 15|04|24 se cumpla?</p>
+                <img src="./averiguaremos.jpg" style="max-width: 40%; height: auto;">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="janne.png" alt="" style="width: 190%;">
+            <figcaption style="position: absolute; bottom: 0; left: 0; width: 100%; background-color: rgba(255, 255, 255, 0.8); padding: 5px;">PD: Justo iba a poner abajo la foto que tenías pero casualmente después la cambiaste XD</figcaption>
+          </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Palabras para ti</p>
+            <h2>Holaa Janne, <span> Primero que nada, buenos días y segundo, espero que al momento de leer esto esté todo bien!
+            </span> </h2>
+            
+            <p>Pues mira, me surgió está idea de crear una pagina para demostrar un poco que aunque nos conocemos un poco, me importas y mucho. Otro poco de contexto, creo que te conté cuando nos conocimos sobre la página que hice de la escuela y se me ocurrió hacer algo igual. Donde podamos tener nuestra historia y como nos conocimos poco a poco
+               Creo que la honestidad funciona y siento que nunca habia querido a una persona como a ti por alguna razón, tengo fé de que podamos funcionar y conocernos más. 💌
+            </p>
+            <p>Y pase lo que pase, sea lo que sea, siempre contarás incondicionalmente con mi apoyo en todo
+            </p>
+        </div>
+    </section>
+<!--cuenta para nuestro aniversxario de 1 año-->
+
+<style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+
+
+    <style>
+                body {
+                    font-family: 'Arial', sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #070707;
+                }
+        
+                nav {
+                    background-color: #333;
+                    padding: 10px;
+                    text-align: center;
+                }
+        
+                ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                }
+        
+                li {
+                    display: inline;
+                    margin: 0 10px;
+                }
+        
+                a {
+                    text-decoration: none;
+                    color: #070707;
+                    font-size: 18px;
+                    font-weight: bold;
+                    transition: color 0.3s;
+                }
+        
+                a:hover {
+                    color: #bafc05; /* Cambiar a color deseado al pasar el ratón */
+                }
+
+                button,button::after {
+  padding: 10px 50px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: transparent;
+  position: relative;
+}
+
+
+
+button::after {
+  --move1: inset(50% 50% 50% 50%);
+  --move2: inset(31% 0 40% 0);
+  --move3: inset(39% 0 15% 0);
+  --move4: inset(45% 0 40% 0);
+  --move5: inset(45% 0 6% 0);
+  --move6: inset(14% 0 61% 0);
+  clip-path: var(--move1);
+  content: 'Te Amo 💘';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+}
+
+button:hover::after {
+  animation: glitch_4011 1s;
+  text-shadow: 10 10px 10px black;
+  animation-timing-function: steps(2, end);
+  text-shadow: -3px -3px 0px #1df2f0, 3px 3px 0px #E94BE8;
+  background-color: transparent;
+  border: 3px solid rgb(0, 255, 213);
+}
+
+button:hover {
+  text-shadow: -1px -1px 0px #1df2f0, 1px 1px 0px #E94BE8;
+}
+
+button:hover {
+  background-color: transparent;
+  border: 1px solid rgb(0, 255, 213);
+  box-shadow: 0px 10px 10px -10px rgb(0, 255, 213);
+}
+
+@keyframes glitch_4011 {
+  0% {
+    clip-path: var(--move1);
+    transform: translate(0px,-10px);
+  }
+
+  10% {
+    clip-path: var(--move2);
+    transform: translate(-10px,10px);
+  }
+
+  20% {
+    clip-path: var(--move3);
+    transform: translate(10px,0px);
+  }
+
+  30% {
+    clip-path: var(--move4);
+    transform: translate(-10px,10px);
+  }
+
+  40% {
+    clip-path: var(--move5);
+    transform: translate(10px,-10px);
+  }
+
+  50% {
+    clip-path: var(--move6);
+    transform: translate(-10px,10px);
+  }
+
+  60% {
+    clip-path: var(--move1);
+    transform: translate(10px,-10px);
+  }
+
+  70% {
+    clip-path: var(--move3);
+    transform: translate(-10px,10px);
+  }
+
+  80% {
+    clip-path: var(--move2);
+    transform: translate(10px,-10px);
+  }
+
+  90% {
+    clip-path: var(--move4);
+    transform: translate(-10px,10px);
+  }
+
+  100% {
+    clip-path: var(--move1);
+    transform: translate(0);
+  }
+}
+  </style>
+
+<style>
+   
+  </style>
+
+</head>
+<body>
+
+    <!-- SECCION-->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Nuestros Momentos</h3>
+        <pr>
+
+        </pr>
+        <pr>
+            Espero algún día poder llenar esta galería dónde tengamos momentos juntos, y se que igual y suena medio raro todo esto, pero no tengo dudas de que es real lo que siento por ti 👉🏻👈🏻
+        </pr>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="first.jpg" alt="">
+                <div class="info">
+                    <h4></h4>
+                    
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="second.jpg" alt="">
+                <div class="info">
+                    <h4></h4>
+                    
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="third.jpg" alt="">
+                <div class="info">
+                    <h4></h4>
+                   </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="fourth.jpg" alt="">
+                <div class="info">
+                    <h4></h4>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="five.jpg" alt="">
+                <div class="info">
+                    <h4></h4>
+                    
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="six.jpg" alt="">
+                <div class="info">
+                    <h4></h4>
+
+    
+                </div>
+            </div>
+        </div>
+      
+    </section>
+
+
+    <p>Sitio Desarrollado con ❤️ por Ángel Samuel Reséndiz González</a></p>
+
+
+        <!-- SECCION FOOTER -->
+    <footer>
+        <p>&copy; Todos los derechos reservados - 2024 | A.S.R.G</p>
+
+
+    </footer>
+
+    <script src="scrip.js"></script>
+</body>
+
+</html>
