@@ -30,39 +30,99 @@ img {
 
 </style>
 
+<style>
+  .video-background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.contenido {
+    position: relative;
+    z-index: 1;
+}
+
+</style>
+
 <body>
-    <!-- SECCION I N I C I O -->
-    <section id="inicio">
-        <div class="contenido">
-            <header>
-                <div class="contenido-header">
-                    <h1>De Samuel para, Janne</h1>
-                    <nav id="nav" class="">
-                        <ul id="links">
-                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
-                            <li><a href="#sobremi" onclick="seleccionar(this)">¿Qué es este sitio?</a></li>                           
-                        </ul>
-                    </nav>
+  <section id="inicio" class="video-background">
+    <!-- Contenido de la sección "Inicio" -->
+    <div class="contenido">
+        <header>
+            <div class="contenido-header">
+                <h1>De Samuel para, Janne</h1>
+                <nav id="nav" class="">
+                    <ul id="links">
+                        <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                        <li><a href="#sobremi" onclick="seleccionar(this)">¿Qué es este sitio?</a></li>                           
+                    </ul>
+                </nav>
 
-                    <!-- Icono del menu responsive -->
-                    <div id="icono-nav" onclick="responsiveMenu()">
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
-
-            </header>
-            <div class="presentacion">
-                <p class="bienvenida">Se que puede ser un poco raro esto pero, con el tiempo verás porque lo hice...</p>
-                <h2><span></span><3
-                    </h2>
-                <p class="descripcion">Será que 15|04|24 se cumpla?</p>
-                <img src="./averiguaremos.jpg" style="max-width: 40%; height: auto;">
-
+                <!-- Icono del menu responsive -->
+                <div id="icono-nav" onclick="responsiveMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
+        </header>
+        <div class="presentacion">
+            <p class="bienvenida">Se que puede ser un poco raro esto pero, con el tiempo verás porque lo hice...</p>
+            <h2><span></span><3></h2>
+            <p class="descripcion">Será que 15|04|24 se cumpla?</p>
+            <img src="./averiguaremos.jpg" style="max-width: 40%; height: auto;">
         </div>
-    </section>
+    </div>
+    <!-- Video de fondo -->
+    <video autoplay muted loop class="video" id="bgvid">
+        <source src="./stars.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+</section>
+
+
 
     <!-- SECCION S O B R E M I -->
     <section id="sobremi">
+
+      <style>
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.contenido {
+    position: relative;
+    z-index: 1;
+    color: white; /* Esto es opcional, solo para hacer el texto más legible sobre el video */
+}
+
+      </style>
         <div class="contenedor-foto">
             <img src="janne.png" alt="" style="width: 190%;">
             <figcaption style="position: absolute; bottom: 0; left: 0; width: 100%; background-color: rgba(255, 255, 255, 0.8); padding: 5px;">PD: Justo iba a poner abajo la foto que tenías pero casualmente después la cambiaste XD</figcaption>
@@ -136,100 +196,6 @@ img {
   position: relative;
 }
 
-
-
-button::after {
-  --move1: inset(50% 50% 50% 50%);
-  --move2: inset(31% 0 40% 0);
-  --move3: inset(39% 0 15% 0);
-  --move4: inset(45% 0 40% 0);
-  --move5: inset(45% 0 6% 0);
-  --move6: inset(14% 0 61% 0);
-  clip-path: var(--move1);
-  content: 'Te Amo 💘';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: block;
-}
-
-button:hover::after {
-  animation: glitch_4011 1s;
-  text-shadow: 10 10px 10px black;
-  animation-timing-function: steps(2, end);
-  text-shadow: -3px -3px 0px #1df2f0, 3px 3px 0px #E94BE8;
-  background-color: transparent;
-  border: 3px solid rgb(0, 255, 213);
-}
-
-button:hover {
-  text-shadow: -1px -1px 0px #1df2f0, 1px 1px 0px #E94BE8;
-}
-
-button:hover {
-  background-color: transparent;
-  border: 1px solid rgb(0, 255, 213);
-  box-shadow: 0px 10px 10px -10px rgb(0, 255, 213);
-}
-
-@keyframes glitch_4011 {
-  0% {
-    clip-path: var(--move1);
-    transform: translate(0px,-10px);
-  }
-
-  10% {
-    clip-path: var(--move2);
-    transform: translate(-10px,10px);
-  }
-
-  20% {
-    clip-path: var(--move3);
-    transform: translate(10px,0px);
-  }
-
-  30% {
-    clip-path: var(--move4);
-    transform: translate(-10px,10px);
-  }
-
-  40% {
-    clip-path: var(--move5);
-    transform: translate(10px,-10px);
-  }
-
-  50% {
-    clip-path: var(--move6);
-    transform: translate(-10px,10px);
-  }
-
-  60% {
-    clip-path: var(--move1);
-    transform: translate(10px,-10px);
-  }
-
-  70% {
-    clip-path: var(--move3);
-    transform: translate(-10px,10px);
-  }
-
-  80% {
-    clip-path: var(--move2);
-    transform: translate(10px,-10px);
-  }
-
-  90% {
-    clip-path: var(--move4);
-    transform: translate(-10px,10px);
-  }
-
-  100% {
-    clip-path: var(--move1);
-    transform: translate(0);
-  }
-}
   </style>
 
 <style>
